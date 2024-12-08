@@ -4,9 +4,9 @@
 
 ## Getting started
 
-First build the shard lib with
+First build the shared lib with
 ```
-make build # or just "make"
+make build && make install
 ```
 
 After that, you can use the library through golang by importing "C" and adding this on top of the import
@@ -15,3 +15,5 @@ After that, you can use the library through golang by importing "C" and adding t
 #include <stdlib.h>
 #include <path/to/wrapper.h>
 ```
+
+you can see an example of using this wrapper at ./example.go
